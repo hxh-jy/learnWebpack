@@ -1,8 +1,8 @@
 import { cube } from './math.js';
-if (process.env.NODE_ENV !== 'production') {
-    console.log('Looks like we are in development mode!');
-  }
- 
+ if (process.env.NODE_ENV !== 'production') {
+   console.log('Looks like we are in development mode!');
+ }
+
  function component() {
   const element = document.createElement('pre');
 
@@ -13,5 +13,5 @@ if (process.env.NODE_ENV !== 'production') {
 
    return element;
  }
-
+console.log('测试自动更新')
  document.body.appendChild(component());
